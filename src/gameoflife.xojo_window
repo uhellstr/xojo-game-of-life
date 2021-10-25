@@ -1,7 +1,7 @@
 #tag Window
 Begin Window gameoflife
    Backdrop        =   0
-   BackgroundColor =   &c00000000
+   BackgroundColor =   &cFEFFFE00
    Composite       =   False
    DefaultLocation =   0
    FullScreen      =   False
@@ -24,9 +24,42 @@ Begin Window gameoflife
    Type            =   0
    Visible         =   True
    Width           =   953
+   Begin Canvas GameBoardCanvas
+      AllowAutoDeactivate=   True
+      AllowFocus      =   False
+      AllowFocusRing  =   True
+      AllowTabs       =   False
+      Backdrop        =   0
+      Enabled         =   True
+      Height          =   606
+      Index           =   -2147483648
+      InitialParent   =   ""
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      TabIndex        =   0
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   20
+      Transparent     =   True
+      Visible         =   True
+      Width           =   913
+   End
 End
 #tag EndWindow
 
 #tag WindowCode
 #tag EndWindowCode
 
+#tag Events GameBoardCanvas
+	#tag Event
+		Sub Open()
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents

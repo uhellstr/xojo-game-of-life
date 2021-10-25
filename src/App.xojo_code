@@ -1,6 +1,32 @@
 #tag Class
 Protected Class App
 Inherits Application
+	#tag Event
+		Sub Open()
+		  const width = 131
+		  const height = 36
+		  var i,j As Integer
+		  // Inititalize the Game of Life generations
+		  Dim currentGen(width,height) As Integer
+		  Dim nextGen(width,height) As Integer
+		  
+		  // Clear out the currentGen and nextGen arrays
+		  for i  =  0 to width
+		    for j =  0 to height
+		      currentGen(i,j) = 0
+		      nextGen(i,j) = 0
+		    next
+		  next
+		  
+		  
+		  
+		  
+		  
+		  
+		End Sub
+	#tag EndEvent
+
+
 	#tag Constant, Name = kEditClear, Type = String, Dynamic = False, Default = \"&Delete", Scope = Public
 		#Tag Instance, Platform = Windows, Language = Default, Definition  = \"&Delete"
 		#Tag Instance, Platform = Linux, Language = Default, Definition  = \"&Delete"
