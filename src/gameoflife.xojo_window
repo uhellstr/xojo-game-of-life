@@ -1,16 +1,16 @@
 #tag Window
-Begin Window Window1
+Begin Window gameoflife
    Backdrop        =   0
-   BackgroundColor =   &cFFFFFF00
+   BackgroundColor =   &c00000000
    Composite       =   False
    DefaultLocation =   0
    FullScreen      =   False
-   HasBackgroundColor=   False
+   HasBackgroundColor=   True
    HasCloseButton  =   True
    HasFullScreenButton=   False
-   HasMaximizeButton=   True
+   HasMaximizeButton=   False
    HasMinimizeButton=   True
-   Height          =   400
+   Height          =   672
    ImplicitInstance=   True
    MacProcID       =   0
    MaximumHeight   =   32000
@@ -19,11 +19,11 @@ Begin Window Window1
    MenuBarVisible  =   True
    MinimumHeight   =   64
    MinimumWidth    =   64
-   Resizeable      =   True
-   Title           =   "Untitled"
+   Resizeable      =   False
+   Title           =   "Game Of Life"
    Type            =   0
    Visible         =   True
-   Width           =   600
+   Width           =   953
 End
 #tag EndWindow
 
