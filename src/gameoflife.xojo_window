@@ -1,7 +1,7 @@
 #tag Window
 Begin Window gameoflife
    Backdrop        =   0
-   BackgroundColor =   &cFEFFFE00
+   BackgroundColor =   &c45464600
    Composite       =   False
    DefaultLocation =   0
    FullScreen      =   False
@@ -10,7 +10,7 @@ Begin Window gameoflife
    HasFullScreenButton=   False
    HasMaximizeButton=   False
    HasMinimizeButton=   True
-   Height          =   672
+   Height          =   712
    ImplicitInstance=   True
    MacProcID       =   0
    MaximumHeight   =   32000
@@ -23,22 +23,23 @@ Begin Window gameoflife
    Title           =   "Game Of Life"
    Type            =   0
    Visible         =   True
-   Width           =   953
+   Width           =   993
    Begin Canvas GameBoardCanvas
       AllowAutoDeactivate=   True
       AllowFocus      =   False
       AllowFocusRing  =   True
       AllowTabs       =   False
       Backdrop        =   0
+      DoubleBuffer    =   False
       Enabled         =   True
-      Height          =   606
+      Height          =   672
       Index           =   -2147483648
       InitialParent   =   ""
       Left            =   20
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
       Scope           =   0
       TabIndex        =   0
@@ -48,18 +49,18 @@ Begin Window gameoflife
       Top             =   20
       Transparent     =   True
       Visible         =   True
-      Width           =   913
+      Width           =   953
    End
 End
 #tag EndWindow
 
 #tag WindowCode
-#tag EndWindowCode
-
-#tag Events GameBoardCanvas
 	#tag Event
 		Sub Open()
-		  
+		  GameBoardCanvas.Refresh
 		End Sub
 	#tag EndEvent
-#tag EndEvents
+
+
+#tag EndWindowCode
+
